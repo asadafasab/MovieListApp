@@ -1,0 +1,22 @@
+{
+    "title": "Movie List App",
+    "subtitle": "Here you can add, edit and delete your movies.",
+    "table": {
+        "id": "Id",
+        "name": "Name",
+        "productionYear": "Production Year",
+        "actions": "Actions"
+    },
+    "modals": {
+        "confirmQuestion": "Are you sure?",
+        "yes": "Yes",
+        "no": "No",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit",
+        "addNewMovie": "Add New Movie",
+        "editMovie": "Edit movie",
+        "save": "Save changes",
+        "movieTitle": "Movie Title"
+    }
+}

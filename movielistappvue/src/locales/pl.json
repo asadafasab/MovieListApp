@@ -1,0 +1,22 @@
+{
+    "title": "Aplikacja z listą filmów",
+    "subtitle": "Możesz dodawać, edytować i usuwać tutaj swoje filmy (czy coś).",
+    "table": {
+        "id": "Id",
+        "name": "Tytuł",
+        "productionYear": "Premiera",
+        "actions": "Akcje"
+    },
+    "modals": {
+        "confirmQuestion": "Na pewno?",
+        "yes": "Tak",
+        "no": "Nie",
+        "cancel": "Anuluj",
+        "delete": "Usuń",
+        "edit": "Edytuj",
+        "addNewMovie": "Dodaj nowy film",
+        "editMovie": "Edytuj film",
+        "save": "Zapisz zmiany",
+        "movieTitle": "Tytuł filmu"
+    }
+}
