@@ -313,11 +313,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.navbar {
-  height: 9%;
-  display: flex;
-  justify-content: center;
-}
-</style>
