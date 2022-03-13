@@ -17,6 +17,8 @@
         "addNewMovie": "Dodaj nowy film",
         "editMovie": "Edytuj film",
         "save": "Zapisz zmiany",
-        "movieTitle": "Tytuł filmu"
+        "movieTitle": "Tytuł filmu",
+        "nameError": "Tytuł wymagany.",
+        "yearError": "Rok powinnien należeć do przedziału od 1900 do 2100."
     }
 }

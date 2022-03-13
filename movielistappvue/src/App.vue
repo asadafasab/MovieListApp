@@ -75,7 +75,7 @@
             :placeholder="$t('table.name')"
           />
           <span v-if="v$.movieCurrent.name.$error">
-            {{ v$.v$.movieCurrent.name.$errors[0].$message }}
+            {{ $t("modals.nameError") }}
           </span>
           <input
             v-model="state.movieCurrent.productionYear"
@@ -84,7 +84,7 @@
             :placeholder="$t('table.productionYear')"
           />
           <span v-if="v$.movieCurrent.productionYear.$error">
-            {{ v$.v$.movieCurrent.productionYear.$errors[0].$message }}
+            {{ $t("modals.yearError") }}
           </span>
         </section>
         <footer class="modal-card-foot">
@@ -117,7 +117,7 @@
             :placeholder="$t('table.name')"
           />
           <span v-if="v$.movieCurrent.name.$error">
-            {{ v$.v$.movieCurrent.name.$errors[0].$message }}
+            {{ $t("modals.nameError") }}
           </span>
           <input
             v-model="state.movieCurrent.productionYear"
@@ -126,7 +126,7 @@
             :placeholder="$t('table.productionYear')"
           />
           <span v-if="v$.movieCurrent.productionYear.$error">
-            {{ v$.v$.movieCurrent.productionYear.$errors[0].$message }}
+            {{ $t("modals.yearError") }}
           </span>
         </section>
         <footer class="modal-card-foot">
@@ -213,16 +213,7 @@ export default {
   data() {
     return {
       movies: [],
-      // movieCurrent: {
-      //   id: null,
-      //   name: "",
-      //   productionYear: null,
-      // },
       deleteId: null,
-      // //modals
-      // isVisibleDelete: false,
-      // isVisibleMovieModal: false,
-      // isVisibleEditModal: false,
     };
   },
   async created() {
@@ -271,6 +262,11 @@ export default {
       this.state.isVisibleDelete = false;
     },
     async addNewMovie() {
+      //validation
+      this.v$.$validate();
+      if (this.v$.$error) {
+        return;
+      }
       this.state.isVisibleMovieModal = false;
       if (this.state.movieCurrent.productionYear == "") {
         this.state.movieCurrent.productionYear = null;
@@ -291,6 +287,11 @@ export default {
         });
     },
     async editMovie() {
+      //validation
+      this.v$.$validate();
+      if (this.v$.$error) {
+        return;
+      }
       this.state.isVisibleEditModal = false;
 
       await axios

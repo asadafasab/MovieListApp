@@ -17,6 +17,8 @@
         "addNewMovie": "Add New Movie",
         "editMovie": "Edit movie",
         "save": "Save changes",
-        "movieTitle": "Movie Title"
+        "movieTitle": "Movie Title",
+        "nameError": "Name is required",
+        "yearError": "Year should be between 1900 and 2100."
     }
 }
