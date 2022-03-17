@@ -5,6 +5,12 @@ The web application is based on ASP.NET (dotnet 6) and vue.js. It's written
 in C# and JavaScript, also employs vualidate, Axios, and entity framework, 
 Bulma is used as a CSS framework.
 
+##### Features:
+* Multiple Language Versions
+* Form validation with vualidate
+* Supports all modern browsers
+* REST API
+
 #### Dependencies
 - vue
 - dotnet
