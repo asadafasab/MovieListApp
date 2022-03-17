@@ -1,5 +1,9 @@
 # MovieListApp
-
+A full-stack application for CRUD operation on movies.
+It's simple and easy to use, has multiple language versions support and form validators.
+The web application is based on ASP.NET (dotnet 6) and vue.js. It's written 
+in C# and JavaScript, also employs vualidate, Axios, and entity framework, 
+Bulma is used as a CSS framework.
 
 #### Dependencies
 - vue
@@ -7,6 +11,9 @@
 - entity framework
 - axios
 - vuelidate 
+
+#### TODO
+- docker-compose
 
 #### How to run
 ```bash
@@ -26,6 +33,3 @@ yarn add @vuelidate/core @vuelidate/validators
 yarn serve
 ```
 
-
-#### TODO
-- docker-compose
